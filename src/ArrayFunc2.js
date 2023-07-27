@@ -30,8 +30,23 @@ const arr2 = [
 ];
 
 console.log(arr2.findIndex((elm) => elm.color === "green")); // 3
+
 console.log(
   arr2.findIndex((elm) => {
     return elm.color === "red";
   })
 );
+
+// 우리가 반환하자는 값에 직접적으로 접근할때
+const index = arr2.findIndex((elm) => {
+  return elm.color === "blue";
+});
+
+// console.log(arr2[index]); //{ color: 'blue' }
+
+// findIndex 대신 Find 를 이용하기
+const element = arr2.find((elm) => {
+  return elm.color === "blue"; // -> callback 함수는 이조건에 만족하는 첫번째 값을 반환한다
+});
+
+console.log(element); // { color: 'blue' }
