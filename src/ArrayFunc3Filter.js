@@ -41,3 +41,36 @@ console.log(arr1.concat(arr2));
 //     { num: 4, color: 'green' },
 //     { num: 5, color: 'blue' }
 //   ]
+
+// 배열 정렬
+// sort -> 원본 배열 정렬   -> 문자열 기준 사전식
+
+let chars = ["나", "다", "가"];
+
+chars.sort();
+
+console.log(chars); // [ '가', '나', '다' ]
+
+// 숫자는 비교함수가 필요함
+// 오름차순으로 정렬하기   -> 내림차순은 1 과 -1 이 바뀌면 됨
+let numbers = [1, 3, 5, 2, 7, 0, 20, 30, 25];
+
+const compare = (a, b) => {
+  //우리에게 필요한것은 ->  같다, 크다, 작다
+  if (a > b) {
+    return 1;
+  }
+  if (a < b) {
+    return -1;
+  }
+  return 0;
+};
+
+numbers.sort(compare);
+
+console.log(numbers);
+// [0,  1,  2,  3, 5,
+//   7, 20, 25, 30
+// ]
+
+// 배열내의 모든 것들을 문자로 합치는 method
