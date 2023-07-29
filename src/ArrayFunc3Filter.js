@@ -73,4 +73,11 @@ console.log(numbers);
 //   7, 20, 25, 30
 // ]
 
-// 배열내의 모든 것들을 문자로 합치는 method
+// 배열내의 모든 것들을 문자열로 합치는 method  ->  join
+const arr3 = ["진솔", "님", "환영합니다", "어서오세요"];
+
+console.log(arr3.join(" "));
+//진솔 님 환영합니다 어서오세요
+
+console.log(arr3.join("예쁜"));
+//진솔예쁜님예쁜환영합니다예쁜어서오세요
