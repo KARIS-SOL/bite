@@ -2,9 +2,9 @@
 // 왼쪽에서 오른쪽으로 읽는 특성을 이용함
 // 뒤의 연산자를 읽지 않아도 연산을 끝내버리는 것.
 
-// console.log(false && true);
-// console.log(true || false);
-// console.log(!true);
+console.log(false && true);
+console.log(true || false);
+console.log(!true);
 
 const getName = (person) => {
   //   if (!person) {
