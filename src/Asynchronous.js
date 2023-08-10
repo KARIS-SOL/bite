@@ -23,6 +23,17 @@ function taskC(a, cb) {
 taskA(4, 5, (a_res) => {
   // a 함수의 결과를 a_res
   console.log("A RESULT : ", a_res);
+  taskB(a_res, (b_res) => {
+    console.log("B RESULT : ", b_res); // taskA 에서 a + b 의 값을 taksB의 인자로 넣어봄
+    // 그다음 B 에서 나온 결과값을 C 에 넣기
+    taskC(b_res, (c_res) => {
+      console.log("C RESULT : ", c_res);
+    });
+  });
 });
 
 console.log("코드끝 ");
+// 코드끝
+// 3초뒤 A RESULT: 9
+// 1초뒤 B RESULT : 18
+// 2초뒤 C RESULT : -18
