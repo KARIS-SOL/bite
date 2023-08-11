@@ -51,11 +51,3 @@ const meal = {
   양식: "파스타",
   인도: "커리",
 };
-
-const getMeal = (mealType) => {
-  // 2. mealType의 "한식" 을 전달했기 때문에
-  return meal[mealType] || "굶기"; // 4. key 를 가져와서 "불고기" 를 return 하게 된다.
-};
-
-console.log(getMeal("한식")); // 1. getmeal 함수를 호출할때,
-console.log(getMeal(""));
