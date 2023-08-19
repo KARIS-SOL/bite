@@ -1,17 +1,17 @@
 // 주어진 문자열이 한식 종류에 해당하는지 확인하는 조건문
 
-// 함수선언문
-// function isKoreanFood(food) {
-//   if (food === "불고기" || food === "비빔밥" || food === "떡볶이") {
-//     return true;
-//   }
-//   return false;
-// }
+함수선언문;
+function isKoreanFood(food) {
+  if (food === "불고기" || food === "비빔밥" || food === "떡볶이") {
+    return true;
+  }
+  return false;
+}
 
-// const food1 = isKoreanFood("불고기");
-// const food2 = isKoreanFood("pasta");
-// console.log(food1);
-// console.log(food2);
+const food1 = isKoreanFood("불고기");
+const food2 = isKoreanFood("pasta");
+console.log(food1);
+console.log(food2);
 
 // 하지만 이렇게 하면 모든 한식을 확인 할 수 없다. -> switch 도 길어짐. -> 문자열로 이뤄진 한식들 중에 입력받은 parameter의 존재유무확인하면됨.
 // .includes -> 특정문자열이 있는지 확인
